@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Conestoga Garage Sale</title>
+</head>
+<body>
+    <header>
+        <h1>Conestoga Garage Sale</h1>
+        <h2>Raising Money for the Frontline Fund</h2>
+    </header>
+
+    <main id="table1">
+        <form method="post" name="form1" onsubmit="return submitTheForm()">
+            <div class="flex-between">
+                <label for="name" id="name-box">Name</label>
+                <input id="name" name="name1" type="text" placeholder="First Last">
+            </div>
+
+            <div class="flex-between">
+                <label for="email" id="email-box">Email</label>
+                <input id="email" name="email" type="email" placeholder="email@domain.com">
+            </div>
+
+            <div class="flex-between">
+                <label for="card-number" id="card-number-box">Credit Card Number</label>
+                <input id="card-number" name="card-number" type="text" placeholder="xxxx-xxxx-xxxx-xxxx">
+            </div>
+
+            <div class="flex-between">
+                <label for="card-month" id="card-month-box">Credit Card Expiry Month</label>
+                <input id="card-month" name="card-month" type="text" placeholder="MMM">
+            </div>
+
+            <div class="flex-between">
+                <label for="card-year" id="card-year-box">Credit Card Expiry Year</label>
+                <input id="card-year" name="card-year" type="text" placeholder="yyyy">
+            </div>
+
+
+            <h3 class="center">Buy Here!</h3>
+            <div class="flex-between">
+                <label for="i1" id="i1-box">Number of Water Bottles ($5)</label>
+                <input id="i1" name="i1" type="text" placeholder="0">
+            </div>
+
+            <div class="flex-between">
+                <label for="i2" id="i2-box">Number of Baseball Caps ($20)</label>
+                <input id="i2" name="i2" type="text" placeholder="0">
+            </div>
+            
+            <div class="flex-between">
+                <label for="i3" id="i3-box">Number of Pens ($2)</label>
+                <input id="i3" name="i3" type="text" placeholder="0">
+            </div>
+
+            <div class="flex-between">
+                <label for="i4" id="i4-box">Number of Candy Bags ($10)</label>
+                <input id="i4" name="i4" type="text" placeholder="0">
+            </div>
+
+            <div class="flex-between">
+                <label for="i5" id="i5-box">Number of Cup Cakes ($3)</label>
+                <input id="i5" name="i5" type="text" placeholder="0">
+            </div>
+
+            <button type="submit" class="center" id="checkout-button">Checkout</button>
+        </form>
+    </main>
+</body>
+</html>

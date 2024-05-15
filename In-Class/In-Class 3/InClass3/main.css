@@ -1,0 +1,25 @@
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border: 1px black solid;
+}
+
+main{
+    width: 80%;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+h1{
+    border: 1px black solid;
+}
+
+main img{
+    width: 400px;
+    height: 300px;
+    display: inline;
+    border: 1px black solid;
+}

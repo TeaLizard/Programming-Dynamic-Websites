@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main id="main">
+        <h2>Commission calculator</h2>
+        <form id="form1" name="form1" method="post" onsubmit="return submitTheForm()">
+            <fieldset>
+                <legend>Enter information here</legend>
+
+                <label for="q1">Agent Name*</label>
+                <input id="q1" name="q1" type="text">
+                <label for="q2">Agent Number*</label>
+                <input id="q2" name="q2" type="text" placeholder="XX999999">
+                <label for="q3">Agent City*</label>
+                <input id="q3" name="q3" type="text">
+
+                <label for="q4">Total Cost of Phones Sold*</label>
+                <input id="q4" name="q4" type="text" placeholder="0">
+                <label for="q5">Total Cost of Accessories Sold</label>
+                <input id="q5" name="q5" type="text" placeholder="0">
+                <label for="q6">Commission Recieved Till Date*</label>
+                <input id="q6" name="q6" type="text" placeholder="0">
+    
+                <button type="submit">CALCULATE</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

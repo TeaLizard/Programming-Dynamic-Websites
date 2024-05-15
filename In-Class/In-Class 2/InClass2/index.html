@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header><h1>In Class 2</h1></header>
+
+    <main>
+        <h2>Quiz</h2>
+
+        <form name="form" method="post" onsubmit="return submitForm()">
+            <fieldset>
+                <legend><h3>Question 1: What is the capital of France?</h3></legend>
+                <label for="q1b1">Paris</label>
+                <input type="radio" name="question1" id="q1b1" value="true">
+                <label for="q1b2">Rome</label>
+                <input type="radio" name="question1" id="q1b2" value="false">
+                <label for="q1b3">Madrid</label>
+                <input type="radio" name="question1" id="q1b3" value="false">
+                <label for="q1b4">Berlin</label>
+                <input type="radio" name="question1" id="q1b4" value="false">
+            </fieldset>
+            <fieldset>
+                <legend><h3>Question 2: What is the largest planet in our solar system?</h3></legend>
+                <label for="q2b1">Earth</label>
+                <input type="radio" name="question2" id="q2b1" value="false">
+                <label for="q2b2">Saturn</label>
+                <input type="radio" name="question2" id="q2b2" value="false">
+                <label for="q2b3">Jupiter</label>
+                <input type="radio" name="question2" id="q2b3" value="true">
+                <label for="q2b4">Mars</label>
+                <input type="radio" name="question2" id="q2b4" value="false">
+            </fieldset>
+            <fieldset>
+                <legend><h3>Question 3: What is the chemical symbol for water?</h3></legend>
+                <label for="q3b1">H2SO4</label>
+                <input type="radio" name="question3" id="q3b1" value="false">
+                <label for="q3b2">O2</label>
+                <input type="radio" name="question3" id="q3b2" value="false">
+                <label for="q3b3">CO2</label>
+                <input type="radio" name="question3" id="q3b3" value="false">
+                <label for="q3b4">H2O</label>
+                <input type="radio" name="question3" id="q3b4" value="true">
+            </fieldset>
+            <input type="submit" value="Submit">
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+
+      
+    </main>
+
+    <aside>
+        <h2>Score</h2>
+
+        <div id="asidePost"></div>
+    </aside>
+</body>
+</html>

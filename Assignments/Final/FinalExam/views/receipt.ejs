@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="receipt.css">
+</head>
+<body>
+    <main>
+        <p>Name: <%= name %></p>
+        <p>StudentID: <%= studentID %></p>
+        <p>HTML5 Books Purchased: <% if(HTML5Books > 0){%><%= (HTML5Books + ' $' + (HTML5Books * 62.99).toFixed(2)) %><%}else{%><%= 0 %><%} %></p>
+        <p>CSS3 Books Purchased: <% if(CSS3Books > 0){%><%= (CSS3Books + ' $' + (CSS3Books * 51.99).toFixed(2)) %><%}else{%><%= 0 %><%} %></p>
+        <p>Pens Purchased: <% if(pens > 0){%><%= (pens + ' $' + (pens * 2.99).toFixed(2)) %><%}else{%><%= 0 %><%} %></p>
+        <p>Price before Tax: $<%= price.toFixed(2) %></p>
+        <p>Price after Tax: $<%= priceAfterTax.toFixed(2) %> (<%= (tax - 1).toFixed(2) %>%)</p>
+    </main>
+    <form name="viewAll" method="Post" action="/viewAll"><button type="submit">View All Orders</button></form>
+</body>
+</html>

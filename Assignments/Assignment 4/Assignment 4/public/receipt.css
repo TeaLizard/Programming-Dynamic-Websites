@@ -1,0 +1,22 @@
+html{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5vh;
+    font-size: 30px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+}
+
+main{
+    padding: 1rem;
+    border: 1px black solid;
+}

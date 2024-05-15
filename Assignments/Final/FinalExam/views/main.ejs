@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form name="myform" method="Post" action="/receipt">
+        <div>
+            <label>Name</label>
+            <input id="name" placeholder="First Last" type="text" name="name">
+        </div>        
+        <div>
+            <label>StudentID</label>
+            <input id="studentID" placeholder="0000000" type="text" name="studentID">
+        </div>     
+        <div>
+            <label>HTML5 Book: $62.99</label>
+            <input id="HTML5Books" placeholder="0" type="text" name="HTML5Books">
+        </div>            
+        <div>
+            <label>CSS3 Book: $51.99</label>
+            <input id="CSS3Books" placeholder="0" type="text" name="CSS3Books">
+        </div>
+        <div>
+            <label>Pens: $2.99</label>
+            <input id="pens" placeholder="0" type="text" name="pens">
+        </div>
+        
+        <div><button type="submit">Submit</button></div>
+    </form>
+
+    <form name="viewAll" method="Post" action="/viewAll"><button type="submit">View All Orders</button></form>
+    
+    <%
+    if(typeof(errors) != 'undefined'){
+        %><section><%
+        for(var error of errors){
+        %>
+        <p class="errors"><%= error.msg %></p>
+        <%
+        }
+        %></section><%
+    }%>
+</body>
+</html>

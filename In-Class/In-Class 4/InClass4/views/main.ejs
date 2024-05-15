@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" method="Post" action="/thanks">
+        <label>Name</label>
+        <input id="name" placeholder="First Last" type="text" name="name"><br/>
+
+        <label>Email</label>
+        <input id="email" placeholder="email@domain.com" type="text" name="email"><br/>
+
+        <button type="submit">Submit</button>
+    </form>
+    <section>
+        <%
+        if(typeof(errors) != 'undefined'){
+            for(var error of errors){
+            %>
+            <p class="errors"><%= error.msg %></p>
+            <%
+            }
+        }
+        %>
+    </section>
+</body>
+</html>

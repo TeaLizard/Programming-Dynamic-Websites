@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="viewAll.css">
+</head>
+<body>
+    <h1>All Orders</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Province</th>
+                <th>Basketballs Sold</th>
+                <th>Footballs Sold</th>
+                <th>Price Before Tax</th>
+                <th>Price After Tax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%
+            orders.forEach(function(order){
+                %>
+                <tr>
+                    <td><%= order.name %></td>
+                    <td><%= order.email %></td>
+                    <td><%= order.phone %></td>
+                    <td><%= order.address %></td>
+                    <td><%= order.city %></td>
+                    <td><%= order.province %></td>
+                    <td><% if(order.basketballs > 0){%><%= order.basketballs %><%}else{%><%= 0 %><%} %></td>
+                    <td><% if(order.footballs > 0){%><%= order.footballs %><%}else{%><%= 0 %><%} %></td>
+                    <td>$<%= order.price.toFixed(2) %></td>
+                    <td>$<%= order.priceAfterTax.toFixed(2) %></td>
+                </tr>
+                <%
+            });
+            %>
+        </tbody>
+    </table>
+    <form name="return-form" method="get" action="/"><button type="submit">Home</button></form>
+</body>
+</html>

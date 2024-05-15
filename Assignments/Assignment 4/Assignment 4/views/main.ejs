@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form name="myform" method="Post" action="/receipt">
+        <div>
+            <label>Name</label>
+            <input id="name" placeholder="First Last" type="text" name="name">
+        </div>        
+        <div>
+            <label>Email</label>
+            <input id="email" placeholder="email@domain.com" type="text" name="email">
+        </div>        
+        <div>
+            <label>Phone Number</label>
+            <input id="phone" placeholder="1111111111" type="text" name="phone">
+        </div>       
+        <div>
+            <label>Address</label>
+            <input id="address" placeholder="" type="text" name="address">
+        </div>  
+        <div>
+            <label>City</label>
+            <input id="city" placeholder="" type="text" name="city">
+        </div>
+        <div>
+            <label>Province</label>
+            <input id="province" placeholder="ON" type="text" name="province">
+        </div>       
+        <div>
+            <label>Basketball $5.50</label>
+            <input id="basketball" placeholder="0" type="number" name="basketball">
+        </div>            
+        <div>
+            <label>Football $6.00</label>
+            <input id="football" placeholder="0" type="number" name="football">
+        </div>
+        
+        <div><button type="submit">Submit</button></div>
+    </form>
+
+    <form name="viewAll" method="Post" action="/viewAll"><button type="submit">View All Orders</button></form>
+    
+    <%
+    if(typeof(errors) != 'undefined'){
+        %><section><%
+        for(var error of errors){
+        %>
+        <p class="errors"><%= error.msg %></p>
+        <%
+        }
+        %></section><%
+    }%>
+</body>
+</html>

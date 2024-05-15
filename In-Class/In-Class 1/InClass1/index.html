@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Addition()
+        {
+            let firstNumber = parseFloat(prompt("Enter the first number.",' '));
+            let secondNumber = parseFloat(prompt("Enter the second number.",' '));
+            let totalNumber = firstNumber + secondNumber;
+            document.write(`<p>${firstNumber} + ${secondNumber} = ${totalNumber}</p>
+            <p>Have a great day!</p>`);
+        }
+        function Modulus()
+        {
+            let firstNumber = parseFloat(prompt("Enter the first number.",' '));
+            let secondNumber = parseFloat(prompt("Enter the second number.",' '));
+            let totalNumber = firstNumber % secondNumber;
+            document.write(`<p>${firstNumber} % ${secondNumber} = ${totalNumber}</p>
+            <p>Have a great day!</p>`);
+        }
+    </script>
+</head>
+<body>
+    <p>Welcome! Press a button to either add or modulate two numbers that you will be prompted to answer!</p>
+    <button onclick="Addition()">+</button>
+    <button onclick="Modulus()">%</button>
+</body>
+</html>

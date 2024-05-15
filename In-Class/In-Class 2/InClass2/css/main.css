@@ -1,0 +1,26 @@
+html{
+    font-size: 20px;
+}
+
+body{
+    display: grid;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: ". header header ." ". main aside .";
+}

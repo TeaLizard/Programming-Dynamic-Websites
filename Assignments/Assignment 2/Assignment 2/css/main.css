@@ -1,0 +1,62 @@
+html{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+main{
+    border: 1px black solid;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+form{
+    padding: 10px;
+    padding-top: 5px;
+    width: 375px;
+}
+
+/* form h3, form button{
+    justify-self: center;
+} */
+
+.center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+form button{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 2em;
+}
+
+table{
+    width: 375px;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px black solid;
+}
+
+.to-bold{
+    font-weight: bold;
+}

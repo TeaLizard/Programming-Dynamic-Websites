@@ -1,0 +1,72 @@
+
+
+
+html{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5vh;
+    font-size: 30px;
+}
+
+input, button{
+    height: 30px;
+}
+
+button{
+    grid-row-start: auto;
+}
+
+input{
+    grid-row-end: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+}
+
+form{
+    padding: 1rem;
+    border: 1px black solid;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+}
+
+section{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px black solid;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+}
+
+ /* */
+
+/* form{
+    overflow: hidden;
+}
+
+label{
+    float: left;
+    clear: both;
+}
+
+input{
+    float: right;
+    clear: both;
+} */
+
+/*  */

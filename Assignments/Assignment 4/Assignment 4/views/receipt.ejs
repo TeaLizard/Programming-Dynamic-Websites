@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="receipt.css">
+</head>
+<body>
+    <main>
+        <p>Name: <%= name %></p>
+        <p>Email: <%= email %></p>
+        <p>Phone Number: <%= phone %></p>
+        <p>Address: <%= address %></p>
+        <p>City: <%= city %></p>
+        <p>Province: <%= province %></p>
+        <p>Basketballs Purchased: <% if(basketballs > 0){%><%= basketballs %><%}else{%><%= 0 %><%} %></p>
+        <p>Footballs Purchased: <% if(footballs > 0){%><%= footballs %><%}else{%><%= 0 %><%} %></p>
+        <p>Price before Tax: $<%= price.toFixed(2) %></p>
+        <p>Price after Tax: $<%= priceAfterTax.toFixed(2) %> (<%= (tax - 1).toFixed(2) %>%)</p>
+    </main>
+    <form name="viewAll" method="Post" action="/viewAll"><button type="submit">View All Orders</button></form>
+</body>
+</html>

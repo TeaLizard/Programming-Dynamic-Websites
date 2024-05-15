@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="viewAll.css">
+</head>
+<body>
+    <h1>All Orders</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>StudentID</th>
+                <th>HTML5 Books Sold</th>
+                <th>CSS3 Books Sold</th>
+                <th>Pens Sold</th>
+                <th>Price Before Tax</th>
+                <th>Price After Tax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%
+            orders.forEach(function(order){
+                %>
+                <tr>
+                    <td><%= order.name %></td>
+                    <td><%= order.studentID %></td>
+                    <td><% if(order.HTML5Books > 0){%><%= order.HTML5Books %><%}else{%><%= 0 %><%} %></td>
+                    <td><% if(order.CSS3Books > 0){%><%= order.CSS3Books %><%}else{%><%= 0 %><%} %></td>
+                    <td><% if(order.pens > 0){%><%= order.pens %><%}else{%><%= 0 %><%} %></td>
+                    <td>$<%= order.price.toFixed(2) %></td>
+                    <td>$<%= order.priceAfterTax.toFixed(2) %></td>
+                </tr>
+                <%
+            });
+            %>
+        </tbody>
+    </table>
+    <form name="return-form" method="get" action="/"><button type="submit">Home</button></form>
+</body>
+</html>
